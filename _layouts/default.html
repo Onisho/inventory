@@ -14,15 +14,14 @@
   </head>
   <body>
     
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col">
-        {% include nav.html %}
-      </div>
-      </div>
+    {% include nav.html %}
+    
+    
+    
+    <div class="container-fluid pt-4 mt-5">
     <div class="row">
       <div class="col-12">
-        <h1 class="text-center mb-3">{{page.title}}</h1>
+        {% include breadcrumb.html %}
       </div>
       {{content}}
       </div>
