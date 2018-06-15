@@ -1,0 +1,9 @@
+---
+layout: default
+title: Ingang
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "INGANG" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

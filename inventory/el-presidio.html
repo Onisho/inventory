@@ -1,0 +1,9 @@
+---
+layout: default
+title: El Presidio
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "EL PRESIDIO" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

@@ -1,0 +1,4 @@
+body {font-size:.7rem;}
+.image {height:100px;background-repeat:no-repeat;background-size:contain;background-position:50% 50%;background-color:black;}
+.card-body, .card-footer {padding: .8rem;}
+.card-title {margin:0;font-size:.9rem;}

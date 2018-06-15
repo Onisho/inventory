@@ -1,0 +1,9 @@
+---
+layout: default
+title: Food & Drinks
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "FOOD & DRINKS" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

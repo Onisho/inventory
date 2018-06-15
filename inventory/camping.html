@@ -1,0 +1,9 @@
+---
+layout: default
+title: Camping
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "CAMPING" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

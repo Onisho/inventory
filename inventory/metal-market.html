@@ -1,0 +1,9 @@
+---
+layout: default
+title: Metal Market
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "METAL MARKET" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

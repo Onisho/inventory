@@ -1,0 +1,9 @@
+---
+layout: default
+title: Black
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "BLACK" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

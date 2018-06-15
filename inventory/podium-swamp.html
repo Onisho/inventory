@@ -1,0 +1,9 @@
+---
+layout: default
+title: Podium Swamp
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "PODIUM SWAMP" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

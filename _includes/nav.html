@@ -1,0 +1,4 @@
+{% assign items = site.data.inventory | group_by: "plaats" %}
+{% for item in items %}
+  <a href="{{item.plaats}}">{{item.plaats}}</a>
+{% endfor %}

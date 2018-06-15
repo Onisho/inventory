@@ -1,0 +1,9 @@
+---
+layout: default
+title: Podium Prison
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "PODIUM PRISON" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

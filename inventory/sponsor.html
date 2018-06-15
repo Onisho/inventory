@@ -1,0 +1,9 @@
+---
+layout: default
+title: Sponsor
+---
+
+{% assign items = site.data.inventory | where: "plaats" , "SPONSOR" %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}

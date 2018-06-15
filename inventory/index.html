@@ -1,0 +1,9 @@
+---
+layout: default
+title: Inventory
+---
+
+{% assign items = site.data.inventory %}
+{% for item in items %}
+  {% include card.html %}
+{% endfor %}
