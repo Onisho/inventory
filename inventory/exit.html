@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Exit
+url: exit
 ---
 
-{% assign items = site.data.inventory | where: "plaats" , "EXIT" %}
+{% assign items = site.data.inventory | where: "PLAATS" , "EXIT" %}
 {% for item in items %}
   {% include card.html %}
 {% endfor %}

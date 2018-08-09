@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Buiten
+url: buiten
 ---
 
-{% assign items = site.data.inventory | where: "plaats" , "BUITEN" %}
+{% assign items = site.data.inventory | where: "PLAATS" , "BUITEN" %}
 {% for item in items %}
   {% include card.html %}
 {% endfor %}

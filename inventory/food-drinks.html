@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Food & Drinks
+url: food-drinks
 ---
 
-{% assign items = site.data.inventory | where: "plaats" , "FOOD & DRINKS" %}
+{% assign items = site.data.inventory | where: "PLAATS" , "FOOD & DRINKS" %}
 {% for item in items %}
   {% include card.html %}
 {% endfor %}

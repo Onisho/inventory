@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Container
+url: container
 ---
 
-{% assign items = site.data.inventory | where: "plaats" , "CONTAINER" %}
+{% assign items = site.data.inventory | where: "PLAATS" , "CONTAINER" %}
 {% for item in items %}
   {% include card.html %}
 {% endfor %}

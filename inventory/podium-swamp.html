@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Podium Swamp
+url: podium-swamp
 ---
 
-{% assign items = site.data.inventory | where: "plaats" , "PODIUM SWAMP" %}
+{% assign items = site.data.inventory | where: "PLAATS" , "PODIUM SWAMP" %}
 {% for item in items %}
   {% include card.html %}
 {% endfor %}

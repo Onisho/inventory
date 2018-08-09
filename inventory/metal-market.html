@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Metal Market
+url: metal-market
 ---
 
-{% assign items = site.data.inventory | where: "plaats" , "METAL MARKET" %}
+{% assign items = site.data.inventory | where: "PLAATS" , "METAL MARKET" %}
 {% for item in items %}
   {% include card.html %}
 {% endfor %}

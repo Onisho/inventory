@@ -1,9 +1,10 @@
 ---
 layout: default
 title: VIP
+url: vip
 ---
 
-{% assign items = site.data.inventory | where: "plaats" , "VIP" %}
+{% assign items = site.data.inventory | where: "PLAATS" , "VIP" %}
 {% for item in items %}
   {% include card.html %}
 {% endfor %}

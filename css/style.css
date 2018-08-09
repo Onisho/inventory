@@ -1,4 +1,6 @@
-body {font-size:.7rem;}
+body {font-size:.7rem;padding-top:80px;}
 .image {height:100px;background-repeat:no-repeat;background-size:contain;background-position:50% 50%;background-color:black;}
 .card-body, .card-footer {padding: .8rem;}
 .card-title {margin:0;font-size:.9rem;}
+.nav-link {text-transform:uppercase;}
+.nav-item.active {background-color:#e6e6e6;}

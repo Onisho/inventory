@@ -1,16 +1,16 @@
 <div class="col-6 col-sm-4 col-md-2">
   <div class="card bg-light mb-3">
-    <div style="background-image:url('{{site.baseurl}}/img/JPEG/{{item.nummer}}.jpg');" class="image"></div>
+    <div style="background-image:url('{{site.baseurl}}/img/{{item.NR}}.jpg');" class="image"></div>
     <div class="card-body">
       
-      <h6 class="card-title">{{item.omschrijving}}</h6>
+      <h6 class="card-title">{{item.OMSCHRIJVING}}</h6>
       <p class="card-text">
-        {{item.referentie}} {{item.mand}}<br />
-        
+        {{item.REFERENTIE}} {{item.MAND}} <br />
+        {{item.ORDERDATUM}}
       </p>
     </div>
     <div class="card-footer">
-      <small><span class="badge badge-pill badge-warning">{{item.nummer}}</span> {{item.medium}} {{item.formaat}} {{item.plaats}}</small>
+      <small><span class="badge badge-pill badge-warning">{{item.NR}}</span> {{item.MEDIUM}} {{item.FORMAAT}} {{item.PLAATS}}</small>
     </div>
   </div>
 </div>
