@@ -1,3 +1,4 @@
 #SITE SETTINGS
 exclude: ['README.md']
 title: inventory
+baseurl: /inventory
